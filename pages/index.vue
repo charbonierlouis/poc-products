@@ -12,7 +12,7 @@ const { data } = await useAsyncData('products', () =>
 <template>
 <section class="grid grid-cols-3 gap-5">
   <article v-for="product in data" :key="product.id" class="p-5 shadow-md">
-    <NuxtLink :to="`/p/${product.id}`">
+    <NuxtLink :to="`/p/${product.id}`" prefetch>
       <h2>{{ product.title }}</h2>
     </NuxtLink>
   </article>
