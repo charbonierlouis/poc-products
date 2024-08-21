@@ -8,7 +8,7 @@ const { data } = await useAsyncData('product', () =>
     description: string;
     price: number;
     image: string;
-  }>(`https://fakestoreapi.com/products/${id}`)
+  }>(`/api/products/${id}`)
 );
 </script>
 

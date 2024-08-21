@@ -5,7 +5,7 @@ const { data } = await useAsyncData('products', () =>
       id: number;
       title: string;
     }[]
-  >('https://fakestoreapi.com/products')
+  >('/api/products')
 );
 </script>
 
